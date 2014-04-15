@@ -28,7 +28,7 @@ class SchoolTest < MiniTest::Unit::TestCase
   end
 
   def test_add_students_to_different_grades
-    skip
+
     school.add("Chelsea", 3)
     school.add("Logan", 7)
     assert_equal({3 => ["Chelsea"], 7 => ["Logan"]}, school.to_hash)
@@ -51,12 +51,12 @@ class SchoolTest < MiniTest::Unit::TestCase
   end
 
   def test_get_students_in_a_non_existant_grade
-    skip
+
     assert_equal [], school.grade(1)
   end
 
   def test_sort_school
-    skip
+
     school.add("Jennifer", 4)
     school.add("Kareem", 6)
     school.add("Christopher", 4)
